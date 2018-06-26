@@ -1,1 +1,2 @@
-const print = () => console.log('ok')
+const print = () => console.log('ok');
+print();

@@ -8,9 +8,11 @@ Boilerplate with scss, optimize files (styles), autoprefixer, linter (sass)
 Just clone repository  
 commands:  
 ```
-gulp - build dist
+gulp - lint, build dist
 gulp clean - remove dist
 gulp lint:styles - lint styles
+gulp lint:scripts - lint & fix scripts
+npm run scripts:fix - only fix scripts
 ```
 
 ### Prerequisites
@@ -33,7 +35,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on gulp-boilerplate](https://github.com/slawomirjopek/gulp-boilerplate/tags). 
+For the versions available, see the [tags on gulp-boilerplate](https://github.com/slawomirjopek/gulp-boilerplate/tags). 
 
 ## Authors
 
