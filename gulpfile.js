@@ -9,6 +9,7 @@ const del = require('del');
 const babel = require('gulp-babel');
 const eslint = require('gulp-eslint');
 const gulpIf = require('gulp-if');
+const uglify = require('gulp-uglify');
 
 const TYPES = {
   STYLES: 'styles',
@@ -52,6 +53,7 @@ gulp.task('scripts', () => gulp
   .pipe(babel({
     presets: ['env'],
   }))
+  .pipe(uglify())
   .pipe(gulp.dest(config.src.dist)));
 
 gulp.task('lint:styles', () => {
