@@ -1,7 +1,7 @@
 # Gulp boilerplate
 
 Gulp v4  
-Boilerplate with scss, es6 support, optimize files (scripts, styles, images), autoprefixer, live reload, router
+Boilerplate with scss, optimize files (styles), autoprefixer, linter (sass)
 
 ## Getting Started
 
@@ -10,13 +10,17 @@ commands:
 ```
 gulp - build dist
 gulp clean - remove dist
+gulp lint:styles - lint styles
 ```
 
 ### Prerequisites
 
-Node, npm
+Node, npm, gulp-cli
 
 ### Installing
+```
+yarn or npm install
+```
 
 Put your files:  
 html to /src/  
