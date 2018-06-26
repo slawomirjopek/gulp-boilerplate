@@ -6,6 +6,7 @@ var reporter = require('postcss-reporter')
 var scssSyntax = require('postcss-scss')
 var stylelint = require('stylelint')
 var del = require('del')
+const babel = require('gulp-babel')
 
 gulp.task('clean', function() {
   return del('./dist')
@@ -23,6 +24,18 @@ gulp.task('styles', function() {
     }))
     .pipe(sass({
       outputStyle: 'compressed'
+    }))
+    .pipe(gulp.dest('./dist'))
+})
+
+gulp.task('scripts', function() {
+  return gulp
+    .src([
+      './src/scripts/**/*.js',
+      '!./src/scripts/vendor/**/*.js'
+    ])
+    .pipe(babel({
+      presets: ['env']
     }))
     .pipe(gulp.dest('./dist'))
 })
@@ -52,4 +65,4 @@ gulp.task("lint:styles", function() {
   }));
 })
 
-gulp.task('default', gulp.series('clean', 'lint:styles', gulp.parallel('styles')))
+gulp.task('default', gulp.series('clean', 'lint:styles', gulp.parallel('styles', 'scripts')))
