@@ -13,10 +13,10 @@ Node, npm
 
 ### Installing
 
-Put:
-html to /src/
-styles and styles vendors to /src/styles
-scripts and scripts vendors to /src/scripts
+Put your files:  
+html to /src/  
+styles and styles vendors to /src/styles  
+scripts and scripts vendors to /src/scripts  
 
 ## Contributing
 
@@ -28,8 +28,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Sławomir Jopek** - *Initial work* - [slawomirjopek](https://github.com/slawomirjopek)
+* **Sławomir Jopek** - [slawomirjopek](https://github.com/slawomirjopek)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License
