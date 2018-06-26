@@ -1,5 +1,6 @@
 var gulp = require('gulp')
 var sass = require('gulp-sass')
+var autoprefixer = require('gulp-autoprefixer')
 var del = require('del')
 
 gulp.task('clean', function() {
@@ -9,6 +10,10 @@ gulp.task('clean', function() {
 gulp.task('styles', function() {
   return gulp
     .src('./src/styles/*.scss')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(sass({
       outputStyle: 'compressed'
     }))

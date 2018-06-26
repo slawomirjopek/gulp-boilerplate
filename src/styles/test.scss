@@ -3,3 +3,7 @@ $color: silver;
 body {
   background: $color;
 }
+
+::placeholder {
+  color: gray;
+}
