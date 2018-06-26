@@ -1,11 +1,16 @@
 # Gulp boilerplate
 
+Gulp v4  
 Boilerplate with scss, es6 support, optimize files (scripts, styles, images), autoprefixer, live reload, router
 
 ## Getting Started
 
 Just clone repository  
-@@commands TBA
+commands:  
+```
+gulp - build dist
+gulp clean - remove dist
+```
 
 ### Prerequisites
 
